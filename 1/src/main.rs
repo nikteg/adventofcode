@@ -18,7 +18,7 @@ fn captcha(numbers: Vec<u32>) -> (u32, u32) {
 }
 
 fn parse_input_string(input: &str) -> Vec<u32> {
-    input.chars().map(|c| c.to_digit(10)).flatten().collect()
+    input.chars().filter_map(|c| c.to_digit(10)).collect()
 }
 
 fn main() {

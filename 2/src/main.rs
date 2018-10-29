@@ -28,7 +28,7 @@ fn spreadsheet(lines: Vec<Vec<u32>>) -> (u32, u32) {
 fn parse_input_string(input: &str) -> Vec<Vec<u32>> {
     input
         .lines()
-        .map(|l| l.split("\t").map(|s| s.parse::<u32>()).flatten().collect())
+        .map(|l| l.split("\t").filter_map(|s| s.parse::<u32>().ok()).collect())
         .collect()
 }
 
