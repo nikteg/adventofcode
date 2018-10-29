@@ -14,11 +14,11 @@ fn captcha(numbers: Vec<u32>) -> (u32, u32) {
         }
     }
 
-    return sum;
+    sum
 }
 
 fn parse_input_string(input: &str) -> Vec<u32> {
-    return input.chars().map(|c| c.to_digit(10)).flatten().collect()
+    input.chars().map(|c| c.to_digit(10)).flatten().collect()
 }
 
 fn main() {
