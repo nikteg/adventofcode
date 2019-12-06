@@ -7,6 +7,7 @@ defmodule Adventofcode.MixProject do
       version: "0.1.0",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
+      dialyzer: [plt_add_apps: [:mix]],
       deps: deps()
     ]
   end
