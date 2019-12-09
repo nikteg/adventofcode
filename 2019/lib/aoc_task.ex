@@ -7,7 +7,8 @@ defmodule Mix.Tasks.Aoc do
 
   @solutions %{
     1 => Adventofcode.RocketEquation,
-    2 => Adventofcode.ProgramAlarm
+    2 => Adventofcode.ProgramAlarm,
+    3 => Adventofcode.CrossedWires,
   }
 
   def run([]) do

@@ -1,0 +1,3 @@
+%{
+  "exchalk": {:hex, :exchalk, "1.0.3", "93311fa4223e99fcbcd9e5fd274525383fd33e4feade6ecc10fb2e5a5d27599c", [:mix], [], "hexpm"},
+}
